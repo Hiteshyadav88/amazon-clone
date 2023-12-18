@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60c0a701aa.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+        }
+
+        .nav1 {
+            display: flex;
+            background-color: rgba(4, 4, 4, 0.894);
+            color: #fff;
+            height: 6vh;
+        }
+
+        nav {
+            position: fixed;
+        }
+
+        li {
+            list-style-type: none;
+            margin-right: 2vw;
+            color: gray;
+        }
+
+        li:hover {
+            font-size: 17px;
+            color: white;
+            text-decoration: underline;
+        }
+
+        #wardrobe {
+            margin-left: 5vw;
+        }
+
+        #prime {
+            font-size: 22px;
+            margin-right: 5vw;
+        }
+
+        #nav2 {
+            display: flex;
+            background-color: black;
+            color: #fff;
+            height: 8vh;
+            margin-top: 0;
+
+        }
+
+        #gear {
+            border: 1px solid;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            width: auto;
+        }
+
+        #person {
+            margin-left: 20vw;
+        }
+
+        .in {
+            margin-top: 12px;
+        }
+
+        #icon1 {
+            border: 1px solid;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(223, 220, 220, 0.825);
+            border-radius: 50%;
+        }
+
+        #img1 {
+            width: 20vh;
+            height: 6vh;
+            margin-left: 5vw;
+        }
+
+        .imgs {
+            width: 20vw;
+            height: 40vh;
+
+        }
+        #empty {
+            border: 1px solid black;
+            width: 100vw;
+            height: 14vh;
+        }
+
+        .container1 {
+            /* margin-top: 10vh; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+        }
+
+        .container4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .down{
+                      
+            display:none;
+        }
+        .drop:hover .down{
+display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav1">
+            <li><i class="fa-solid fa-list"></i></li>
+            <li><b>&nbsp All </b></li>
+            <li>Grocery </li>
+            <li>Health & Personal Care </li>
+            <li >prime  </li>
+            <li>Buy Again </li>
+            <li>Free Delevery </li>
+            <li>Gift Card & Top Up </li>
+            <li>Shopper Tollkit </li>
+            <li>Pet Suppies </li>
+            <!-- <li id="wardrobe"><span><b>prime<i class="fa-brands fa-amazon"></i> wardrobe</b></span></li> -->
+            <li><img id="img1" src="https://i.pinimg.com/236x/94/fc/27/94fc279696cd0448b45726303144d2fd.jpg"
+                    alt="amazon prime logo"></li>
+        </ul>
+        <ul id="nav2">
+            <li id="prime">prime video</li>
+            <li><div class="drop"><div>Home</div>
+            <div class="down">series</div>
+            <div class="down">movies</div>
+            <div class="down">cartoon</div>
+            <div class="down">Original</div>
+            </div></li>
+            <li>Free to me</li>
+            <li>store</li>
+            <li><div class="drop"><div>Channels</div>
+                <div class="down"><div>User 1</div>
+                    <div class="down">User2</div>
+                    <div class="down">User3</div>
+                    <div class="down">User4</div>
+            </div></li>
+            <li><div class="drop"><div>Categories</div>
+                <div class="down"><div>Adult</div>
+                <div class="down">Age>18</div>
+                <div class="down">children</div>
+               
+            </div></li>
+            <li><div class="drop"><div>My Stuff</div>
+                <div class="down"><div>stranger things</div>
+                <div class="down">13 reason why</div>
+                <div class="down">money hiest</div>
+            </div></li>
+            <li><div class="drop"><div>Sports</div>
+            <div class="down">cricket</div>
+            <div class="down">badminton</div>
+            <div class="down">chess</div>
+            <div class="down">ludo</div>
+            </div></li>
+            <li id="person">
+            <li class="in" id="icon1"><i class="fa-solid fa-user fa-lg"></i></li>
+            <li class="in">whose watching </li>
+            <li class="in" id="gear"><i class="fa-solid fa-gear fa-lg"></i></li>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="empty"></div>
+        <div class="container1">
+            <div><img class="imgs" src="https://i.pinimg.com/236x/b6/7a/b1/b67ab1b4b5095bdae9941ba961a24d68.jpg"
+                    alt="movie1"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/46/6b/5b/466b5b0fa4dec9042567d089047ee7a2.jpg"
+                    alt="movie2"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/27/02/b8/2702b87435bccf43ab17cdbe2f85494e.jpg"
+                    alt="movie3"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/39/04/c8/3904c86c62f375215dc6e4c4010167bd.jpg"
+                    alt="movie1"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/21/5c/ad/215cad97b7191746af9b52d16b100dfc.jpg"
+                    alt="movie10"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/55/b2/3f/55b23f1d6bd4450a3d23535f9591e0fa.jpg"
+                    alt="movie10"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/6f/a9/0d/6fa90dde61f2420b8ae7e3bab1d2327f.jpg"
+                    alt="movie10"></div>
+        </div>
+        <h5 style="color: rgb(53, 138, 241); margin-top: 10px; ">Included with prime</h5>
+        <h3 style="margin-bottom: 10px;">Amazon Original</h3>
+        <div class="container2">
+
+            <div><img class="imgs" src="https://i.pinimg.com/236x/8e/d1/51/8ed15191d13e1603f31530a12a10d228.jpg"
+                    alt="movie4"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/f8/0a/b2/f80ab29810755909e453c6b235fabe35.jpg"
+                    alt="movie5"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/dc/bc/83/dcbc83a3397eeae3891eebb09b90f700.jpg"
+                    alt="movie6"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/3d/97/b7/3d97b75673a872e4e711cfc9e93807f0.jpg"
+                    alt="movie11"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/04/49/d6/0449d60c7aaf0a44283c2f02a4c43e30.jpg"
+                    alt="movie1"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/eb/48/ce/eb48ce6b88450dd50fa355c1f36121a1.jpg"
+                    alt="dffdd"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/ae/b1/4b/aeb14b0a504245e9c786dc5acd0a943f.jpg"
+                    alt="movie10"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/f8/0a/b2/f80ab29810755909e453c6b235fabe35.jpg"
+                    alt="movie10"></div>
+        </div>
+        <h5 style="color: rgb(53, 138, 241); margin-top: 10px; ">Included with prime</h5>
+        <h3 style="margin-bottom: 10px;">Amazon Original-hit_movie</h3>
+        <div class="container3">
+            <div><img class="imgs" src="https://i.pinimg.com/236x/8c/34/f5/8c34f58693ad4d9567360ea500b7ded7.jpg"
+                    alt="movie7"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/80/28/b7/8028b7a115dcbd5dd7d7928de472599c.jpg"
+                    alt="movie8"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/82/cd/ed/82cded726820793b75913def4997e59b.jpg"
+                    alt="movie9"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/3c/2b/75/3c2b75fab26dd4502b868c0efee6a0eb.jpg"
+                    alt="dffdd"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/5e/17/11/5e1711bc566ceb28fe949b14b658b21e.jpg"
+                    alt="yuyt"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/64/db/03/64db03892c63157c1a7650ebe695bd79.jpg"
+                    alt="movie10"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/07/50/8a/07508a81c50ff4447becd9aeeaf326e6.jpg"
+                    alt="movie10"></div>
+        </div>
+        <h5 style="color: rgb(53, 138, 241); margin-top: 10px; ">Included with prime</h5>
+        <h3 style="margin-bottom: 10px;">Amazon release</h3>
+        <div class="container4">
+            <div><img class="imgs" src="https://i.pinimg.com/236x/35/40/dc/3540dc9299b9ea4ce2c79eaa30439580.jpg"
+                    alt="movie10"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/c7/50/01/c75001b150743aab5a34b24ebe33f9db.jpg"
+                    alt="movie11"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/96/1c/9d/961c9d095af734245befc0a15813c832.jpg"
+                    alt="movie12"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/73/fe/c2/73fec2376e5cef7895640bbcca86b569.jpg"
+                    alt="dffdd"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/2c/f8/01/2cf8018c24a4c759c0a152c3a372af8e.jpg"
+                    alt="yuyt"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/a7/4e/a9/a74ea955e9f32ec28bcf778b6cb53163.jpg"
+                    alt="movie10"></div>
+            <div><img class="imgs" src="https://i.pinimg.com/236x/fb/2d/e2/fb2de22ca2cdefc3ca586d893a41637f.jpg"
+                    alt="movie10"></div>
+        </div>
+    </div>
+</body>
+
+</html>
